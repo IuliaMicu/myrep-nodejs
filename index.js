@@ -1,6 +1,7 @@
 const express = require("express")
 
 const Sequelize = require('sequelize')
+const axios = require("axios")
 
 const sequelize = new Sequelize('PROFILE', 'iuliamicu', 'JOLIKA97', {
     dialect: "mysql",
@@ -87,4 +88,5 @@ app.delete('/messages/:id', (request, response) => {
     })
 })
 
-app.listen(8080)
+
+app.listen(process.env.PORT||8080)
