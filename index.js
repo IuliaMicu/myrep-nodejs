@@ -88,5 +88,23 @@ app.delete('/messages/:id', (request, response) => {
     })
 })
 
+app.put('/messages/:id', (request, response) => {
+    Messages.findByPk(request.params.id).then((message) => {
+        if(message) {
+            message.update(request.body).then((result) => {
+                response.status(201).json(result)
+            }).catch((err) => {
+                console.log(err)
+                response.status(500).send('database error')
+            })
+        } else {
+            response.status(404).send('resource not found')
+        }
+    }).catch((err) => {
+        console.log(err)
+        response.status(500).send('database error')
+    })
+})
+
 
 app.listen(process.env.PORT||8080)
