@@ -100,7 +100,9 @@ Pentru accesarea acestui API nu a fost nevoie de APIKey.
 
 ## Capturi ecran aplicație 
 
-![](images/1.jpg)
+![](images/1.JPG)
+
+![](images/2.JPG)
 
 ## Referinte
 
