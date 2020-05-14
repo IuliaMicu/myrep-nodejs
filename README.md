@@ -100,6 +100,8 @@ Pentru accesarea acestui API nu a fost nevoie de APIKey.
 
 ## Capturi ecran aplicație 
 
+![](images/1.jpg)
+
 ## Referinte
 
 www.stackoverflow.com
